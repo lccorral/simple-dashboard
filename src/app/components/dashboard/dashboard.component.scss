@@ -1,0 +1,37 @@
+h2 {
+  text-align: center;
+}
+
+.img-container {
+  width: 100px;
+}
+
+.detail-content {
+  max-width: 440px;
+}
+
+.card {
+  min-height: 230px;
+}
+
+a {
+  width: 100%;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  text-align: center;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+a:hover {
+  background-color: black;
+}

@@ -1,0 +1,16 @@
+
+<div class="row">
+  <ng-container *ngFor="let item of data">
+    <div class="col-12 col-md-4 detail-content">
+      <a routerLink="/detail/{{item.date}}">
+        <div class="card mb-3">
+          <div class="card-header">{{item.title}}</div>
+          <div class="card-body">
+            <h5 class="card-title">{{item.date}}</h5>
+            <p *ngIf="item.media_type === 'image'" class="card-text"><img class="img-container" [src]="item.url" alt="astro del espacio"></p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </ng-container>
+</div>

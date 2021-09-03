@@ -1,0 +1,14 @@
+<div class="container mt-3" *ngIf="!isLoading; else loadingTemplate">
+  <h1>{{title}}</h1>
+  <p *ngIf="this.serviceRest.auxData?.length === 0">Error en la carga de datos del servicio</p>
+  <router-outlet></router-outlet>
+</div>
+
+
+<ng-template #loadingTemplate>
+  <div class="loading">
+    <div class="spinner-border text-dark" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+</ng-template>

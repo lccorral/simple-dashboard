@@ -1,0 +1,15 @@
+
+<div *ngIf="object">
+  <div class="pb-3">
+    <button type="button" class="btn btn-primary" (click)="this.location.back()">--Volver--</button>
+  </div>
+  <div class="card mb-3">
+    <div class="card-header">Detalle</div>
+    <div class="card-body">
+      <div class="card-text">
+        <p>{{object.explanation}}</p>
+        <img *ngIf="object.media_type === 'image'" class="img-container" [src]="object.hdurl" alt="astro del espacio">
+      </div>
+    </div>
+  </div>
+</div>
