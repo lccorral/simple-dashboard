@@ -7,8 +7,8 @@
     <div class="card-header">Detalle</div>
     <div class="card-body">
       <div class="card-text">
-        <p>{{object.explanation}}</p>
         <img *ngIf="object.media_type === 'image'" class="img-container" [src]="object.hdurl" alt="astro del espacio">
+        <p class="mt-3">{{object.explanation}}</p>
       </div>
     </div>
   </div>
